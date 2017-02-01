@@ -34,6 +34,8 @@ gem 'blueimp-gallery'
 gem "animate-rails"
 # Devise
 gem 'devise'
+# Rubyracer
+gem 'therubyracer'
 
 
 # Use ActiveModel has_secure_password
