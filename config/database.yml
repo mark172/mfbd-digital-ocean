@@ -21,13 +21,17 @@ test:
   database: db/test.sqlite3
 
 staging:
-  <<: *default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
   database: mfbd_staging
   username: deploy
   password: <%= ENV["DATABASE_PASSWORD"] %>
 
 production:
-  <<: *default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
   database: mfbd_production
   username: deploy
   password: <%= ENV["DATABASE_PASSWORD"] %>
