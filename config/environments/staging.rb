@@ -88,7 +88,7 @@ Rails.application.configure do
     address: "smtp.mailgun.org",
     user_name: ENV['username'],
     password: ENV['password'],
-    authentication => :plain
+    :authentication => :plain
   }
 
 end
