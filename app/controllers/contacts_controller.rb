@@ -29,6 +29,13 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
+
+        first_name = params[:contact][:first_name]
+        last_name = params[:contact][:last_name]
+        email = params[:contact][:emal]
+        phone = params[:contact][:phone]
+        message = params[:contact][:message]
+
         format.html { redirect_to new_contact_path, notice: 'Your message was sent!' }
         format.json { render :show, status: :created, location: @contact }
       else
