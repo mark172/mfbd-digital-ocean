@@ -7,6 +7,6 @@ class ContactMailer < ActionMailer::Base
         @phone = phone
         @message = message
         
-        mail(from: 'no-reply@macfontanaandbigd.com', subject: 'MFBD Info Request')
+        mail(from: 'postmaster@mg.macfontanaandbigd.com', subject: 'MFBD Info Request')
     end
 end
