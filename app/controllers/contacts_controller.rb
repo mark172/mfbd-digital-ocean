@@ -36,6 +36,8 @@ class ContactsController < ApplicationController
         phone = params[:contact][:phone]
         message = params[:contact][:message]
 
+        ContactMailer.contact_email(first_name, last_name, email, phone, message).deliver_now
+
         format.html { redirect_to new_contact_path, notice: 'Your message was sent!' }
         format.json { render :show, status: :created, location: @contact }
       else

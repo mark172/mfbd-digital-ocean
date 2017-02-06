@@ -80,4 +80,16 @@ Rails.application.configure do
   # config.middleware.insert_before(::Rack::Runtime, "::Rack::Auth:: Basic", "Staging") do |u, p|
   #   u == ENV["STAGING_USERNAME"] && p == ENV["STAGING_PASSWORD"]
   # end
+
+  config.action_mailer.delivery_method = :smtp
+  # SMTP settings for mailgun
+  ActionMailer::Base.smtp_settings = {
+    :port           => 587,
+    :address        => "smtp.mailgun.org",
+    :domain         => ENV['domain'],
+    :user_name      => ENV['username'],
+    :password       => ENV['password'],
+    :authentication => :plain,
+  }}
+
 end
