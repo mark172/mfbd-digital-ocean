@@ -82,7 +82,7 @@ Rails.application.configure do
   # end
 
   #config.action_mailer.delivery_method = :smtp
-  
+
   # SMTP settings for mailgun
   ActionMailer::Base.smtp_settings = {
     :user_name => ENV['username'],
@@ -92,7 +92,6 @@ Rails.application.configure do
     :port => 587,
     :authentication => :plain,
     :enable_starttls_auto => true
-}
   }
 
 end
