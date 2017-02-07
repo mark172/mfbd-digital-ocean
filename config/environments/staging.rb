@@ -81,14 +81,18 @@ Rails.application.configure do
   #   u == ENV["STAGING_USERNAME"] && p == ENV["STAGING_PASSWORD"]
   # end
 
-  config.action_mailer.delivery_method = :smtp
+  #config.action_mailer.delivery_method = :smtp
+  
   # SMTP settings for mailgun
   ActionMailer::Base.smtp_settings = {
-    port: 587,
-    address: 'smtp.sendgrid.net',
-    user_name: ENV['username'],
-    password: ENV['password'],
-    :authentication => :plain
+    :user_name => ENV['username'],
+    :password => ENV['password'],
+    :domain => 'macfontanaandbigd.com',
+    :address => 'smtp.sendgrid.net',
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
+}
   }
 
 end
