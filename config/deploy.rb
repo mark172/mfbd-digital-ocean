@@ -2,7 +2,7 @@
 lock "3.7.2"
 
 set :application, "mfbd"
-set :repo_url, "git@github.com:mark172/mfbd-do2.git"
+set :repo_url, "git@github.com:mark172/mfbd-digital-ocean.git"
 
 set :user, "deploy"
 set :stages, %w(production staging)
