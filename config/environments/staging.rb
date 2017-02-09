@@ -85,8 +85,8 @@ Rails.application.configure do
 
   # SMTP settings for mailgun
   ActionMailer::Base.smtp_settings = {
-    :user_name => ENV['username'],
-    :password => ENV['password'],
+    :user_name => ENV['USERNAME'],
+    :password => ENV['PASSWORD'],
     :domain => 'macfontanaandbigd.com',
     :address => 'smtp.sendgrid.net',
     :port => 587,
