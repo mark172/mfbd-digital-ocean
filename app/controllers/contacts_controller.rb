@@ -32,7 +32,7 @@ class ContactsController < ApplicationController
 
         first_name = params[:contact][:first_name]
         last_name = params[:contact][:last_name]
-        email = params[:contact][:emal]
+        email = params[:contact][:email]
         phone = params[:contact][:phone]
         message = params[:contact][:message]
 
