@@ -35,8 +35,8 @@ gem "animate-rails"
 # Devise
 gem 'devise'
 # Rubyracer
-gem 'therubyracer'
-
+#gem 'therubyracer'
+gem 'execjs-fastnode'
 
 
 # Use ActiveModel has_secure_password
