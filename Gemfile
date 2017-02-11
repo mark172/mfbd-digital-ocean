@@ -35,7 +35,7 @@ gem "animate-rails"
 # Devise
 gem 'devise'
 # Rubyracer
-#gem 'therubyracer'
+gem 'therubyracer'
 
 
 
