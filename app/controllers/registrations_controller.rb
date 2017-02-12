@@ -1,6 +1,6 @@
 class RegistrationsController < Devise::RegistrationsController
 
-  before_action :one_admin_registered?
+  before_action :one_admin_registered? 
 
   protected
 
